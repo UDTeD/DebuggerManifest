@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DebuggerServer>
+  <!--
+  Name是在CDK中用于显示的工具名称，建议具备一定可读性
+  -->
+  <Name>T-Head DebugServer</Name>
+  <!--
+  ID是工具组件的唯一标识符，不对外显示，全网唯一
+  -->
+  <ID>T-Head-DebugServer-windows</ID>
+  <!--
+  Vendor是提供该第三方工具的厂商名
+  -->
+  <Vendor>T-Head</Vendor>
+  <!--
+  URL一般是一个web可访问的网站，用于宣传使用
+  -->
+  <URL>https://occ.t-head.cn/</URL>
+  <!--
+  Description用于在CDK中显示对该工具的简单说明
+  -->
+  <Description>平头哥官方CKLink(Lite/Pro)上位机调试工具</Description>
+  <!--
+  Version节点用于描述每个具体的资源，可以存在多个Value值不同的Version用来描述该资源的多个版本
+  -->
+  <Version Value="V5.12.9">
+    <!--
+    ResourceType支持的类型有 tar.gz / zip / git ；但对于DebugServer来说，目前是zip
+    -->
+    <ResourceType>zip</ResourceType>
+    <!--
+    ResourceURL是获取该资源的地址，外网可访问
+    -->
+    <ResourceURL>https://github.com/CDKModues/DebugServer/archive/refs/heads/V5.12.9.zip</ResourceURL>
+    <!--
+    当ResourceType是git时，此域作为分支名，其它类型该节点无效
+    -->
+    <ResourceBranch></ResourceBranch>
+    <!--
+    1 EnvPath用来设置环境变量，在CDK内部使用该工具时，会首先设置该环境变量
+    2 这里相对路径是资源包下载完成以后的父目录：
+      2.1 如果是git形式，则是git clone完成以后的仓库根目录
+      2.2 如果是tar.gz / zip形式，则是直接解压出来以后的顶层目录
+    3 如果环境变量需要多个，以;（英文格式的分号）为分隔符
+    -->
+    <EnvPath>DebugServer-5.12.9/T-HeadDebugServer/bin</EnvPath>
+    <!--
+    启动UI版本的命令名称
+    -->
+    <Tool Name="UICmd" Value="T-HeadDebugServer.exe"/>
+    <Tool Name="ConsoleCmd" Value="DebugServerConsole.exe"/>
+  </Version>
+</DebuggerServer>

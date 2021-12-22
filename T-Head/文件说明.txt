@@ -1,0 +1,3 @@
+DebuggerServer.xml用来描述支持平头哥官方CK-Link(Lite/Pro)调试器的上位机软件工具T-Head DebugServer；
+T-Head DebugServer功能类似于openOCD；
+第三方接入的调试器请参考其它目录的OpenOCD.xml格式；
