@@ -33,9 +33,13 @@
     -->
     <ResourceURL>https://github.com/CDKModues/DebugServer/archive/refs/heads/V5.12.9.zip</ResourceURL>
     <!--
-    当ResourceType是git时，此域作为分支名，其它类型该节点无效
+    ResourceValidation用于验证ResourceURL的安全性和有效性；
+    如果是tar.gz / zip 类型，这里需要提供MD5值；
+      Windows下面计算文件MD5值，可以直接在Windows CMD命令行中输入：
+      certutil -hashfile D:\your\file\fullpath\filename.tar.gz MD5
+    如果是git仓库，这里需要提供commit的hash值
     -->
-    <ResourceBranch></ResourceBranch>
+    <ResourceValidation>bd32d136683aa71277274cf18713efb4</ResourceValidation>
     <!--
     1 EnvPath用来设置环境变量，在CDK内部使用该工具时，会首先设置该环境变量
     2 这里相对路径是资源包下载完成以后的父目录：
