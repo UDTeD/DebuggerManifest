@@ -47,7 +47,7 @@
       2.2 如果是tar.gz / zip形式，则是直接解压出来以后的顶层目录
     3 如果环境变量需要多个，以;（英文格式的分号）为分隔符
     -->
-    <EnvPath>OpenOCD-SiFive-0.10.0/bin</EnvPath>
+    <EnvPath>OpenOCD-GD32VF103-0.10.0/bin</EnvPath>
     <Tool Name="ConsoleCmd" Value="openocd.exe"/>
   </Version>
 </OpenOCD>
