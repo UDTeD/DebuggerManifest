@@ -49,5 +49,6 @@
     -->
     <EnvPath>OpenOCD-SiFive-0.10.0/bin</EnvPath>
     <Tool Name="ConsoleCmd" Value="openocd.exe"/>
+    <Tool Name="Verbose" Value="openocd.exe -v"/>
   </Version>
 </OpenOCD>

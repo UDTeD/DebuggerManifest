@@ -49,5 +49,6 @@
     -->
     <EnvPath>OpenOCD-Haawking-0.1.8/bin</EnvPath>
     <Tool Name="ConsoleCmd" Value="openocd.exe"/>
+    <Tool Name="Verbose" Value="openocd.exe -v"/>
   </Version>
 </OpenOCD>

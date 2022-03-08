@@ -53,5 +53,6 @@
     -->
     <Tool Name="UICmd" Value="T-HeadDebugServer.exe"/>
     <Tool Name="ConsoleCmd" Value="DebugServerConsole.exe"/>
+    <Tool Name="Verbose" Value="DebugServerConsole.exe -v -skip-enter"/>
   </Version>
 </DebuggerServer>
