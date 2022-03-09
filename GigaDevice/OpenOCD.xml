@@ -7,7 +7,7 @@
   <!--
   ID是工具组件的唯一标识符，不对外显示，全网唯一
   -->
-  <ID>openOCD-GigaDevice</ID>
+  <ID>openocd-GigaDevice</ID>
   <!--
   Vendor是提供该第三方工具的厂商名
   -->
